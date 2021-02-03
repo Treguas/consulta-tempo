@@ -3,16 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Consulta por local</title>
+    <link rel="stylesheet" href="./css/responsive.css"
+    <title>Fusos Horários Mundiais</title>
 </head>
 <body>
 
+    <header class="menu">  
+        <nav>
+          <ul >
+            <li>
+                <a href="#home">
+                    <img src="./assets/img/stopwatch.svg" alt="Relogio" style="width: 54px;">
+                </a>
+            </li>
+            <li>
+              <a class="icone fas fa-home" href="index.html"></a>
+            </li>
+            <li>
+              <a href="./ip.html" title="consulta ip">Consulta por IP</a>
+            </li>
+            <li>
+              <a href="./local.html" title="Consulta local">Consulta por Local</a>
+            </li>
+            <li>
+                      
+            </li>
+          </ul>
+        </nav>
+   </header>
 
-    <footer>
-        Este Site não Utiliza Cookies
-        <a href="https://fusohorariomundial.com.br/tabela" target="_blank"><strong>Sobre</strong></a>
-       </footer>
+
+   <main class="content">
+    <div class="page-content">
+     <select name="continente" id="continente" class="input">
+       <option value="" disabled selected>Selecione um continente</option>
+       <option value="Africa">Africa</option>
+       <option value="America">America</option>
+       <option value="Antarctica">Antarctica</option>
+       <option value="Asia">Asia</option>
+       <option value="Atlantic">Atlantic</option>
+       <option value="Australia">Australia</option>
+       <option value="Europe">Europe</option>
+       <option value="Pacific">Pacific</option>
+     </select>
+     <select name="regions" id="regions" class="input">
+      <option value="" disabled selected>Selecione uma região</option>
+    </select>
+    <div class="card">
+      <div class="place"></div>
+      <div class="time"></div>
+      <div class="utc"></div>
+    </div>
+    </div>
+  </main>
+
+   <footer>
+    Este Site não Utiliza Cookies
+    <a href="httuploading://fusohorariomundial.com.br/tabela" target="_blank"><strong>Sobre</strong></a>
+</footer>
     
+
+
+    <script src="./local.js"></script>
 </body>
 </html>
